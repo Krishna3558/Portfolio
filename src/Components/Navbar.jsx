@@ -7,9 +7,9 @@ function Navbar() {
     const [active, setActive] = useState("home");
     const sections = ["home", "about", "skills", "achievements" , "projects", "contact"];
   return (
-    <nav className=' fixed top-0 left-0 w-full bg-gradient-to-r from-slate-950 to-black text-white px-6 md:px-20 py-4  flex items-center justify-between z-50 shadow-md'>
-        <h1 className=' uppercase text-2xl font-bold bg-gradient-to-r from-sky-200 via-blue-300 to-blue-400 bg-clip-text text-transparent'>Portfolio</h1>
-        <ul className="hidden md:flex space-x-8">
+    <nav className=' fixed top-0 left-0 w-full bg-gradient-to-r from-slate-950 to-black text-white px-5 lg:px-20 py-4  flex items-center justify-between z-50 shadow-md'>
+        <h1 className=' uppercase text-xl lg:text-2xl font-bold bg-gradient-to-r from-sky-200 via-blue-300 to-blue-400 bg-clip-text text-transparent'>Portfolio</h1>
+        <ul className="hidden md:flex space-x-4 lg:space-x-8">
             {
                 sections.map((section) => (
                     <li key={section} className="cursor-pointer font-medium">
